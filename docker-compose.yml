@@ -1,0 +1,41 @@
+# docker-compose.yml
+version: '3.8'
+services:
+  api:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=${DATABASE_URL}
+      - REDIS_URL=redis://redis:6379
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    depends_on:
+      - redis
+      - postgres
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+  postgres:
+    image: postgres:15
+    environment:
+      - POSTGRES_DB=spotbulle
+      - POSTGRES_USER=spotbulle
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  worker:
+    build: .
+    command: npm run worker
+    environment:
+      - NODE_ENV=production
+    depends_on:
+      - redis
+      - postgres
+
+volumes:
+  postgres_data:
