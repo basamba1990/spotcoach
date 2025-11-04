@@ -1,4 +1,4 @@
--- migrations/003_vector_matching.sql
+-- infrastructure/scripts/003_vector_matching.sql
 -- Activation extension pg_vector
 CREATE EXTENSION IF NOT EXISTS vector;
 
