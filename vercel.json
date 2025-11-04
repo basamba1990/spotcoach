@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "spotbulle-backend/src/**/*.ts",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "spotbulle-frontend/package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "spotbulle-backend/src/server.ts"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "spotbulle-frontend/$1"
+    }
+  ]
+}
