@@ -1,4 +1,4 @@
-// package.json - Dépendances principales
+// package.json 
 {
   "dependencies": {
     "express": "^4.18.0",
