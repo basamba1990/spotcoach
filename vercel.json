@@ -2,22 +2,22 @@
   "version": 2,
   "builds": [
     {
-      "src": "spotbulle-backend/src/**/*.ts",
+      "src": "spotcoach-back/src/**/*.ts",
       "use": "@vercel/node"
     },
     {
-      "src": "spotbulle-frontend/package.json",
+      "src": "spotcoach-front/package.json",
       "use": "@vercel/next"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "spotbulle-backend/src/server.ts"
+      "dest": "spotcoach-back/src/server.ts"
     },
     {
       "src": "/(.*)",
-      "dest": "spotbulle-frontend/$1"
+      "dest": "spotcoach-front/$1"
     }
   ]
 }
