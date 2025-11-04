@@ -1,0 +1,12 @@
+// package.json
+{
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "docker:build": "docker build -t spotbulle-frontend .",
+    "docker:run": "docker run -p 3000:3000 spotbulle-frontend"
+  }
+}
