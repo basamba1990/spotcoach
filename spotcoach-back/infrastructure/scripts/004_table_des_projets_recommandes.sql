@@ -1,4 +1,5 @@
--- Table des projets recommandés
+--infrastructure/scripts/004_table_des_projets_recommandes.sql
+--Table des projets recommandés
 CREATE TABLE collaborative_projects (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     user_a_id UUID REFERENCES auth.users(id),
