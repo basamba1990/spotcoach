@@ -1,0 +1,97 @@
+{
+  "planètes": {
+    "Soleil": {
+      "archétype": "Héros",
+      "couleur": "Jaune",
+      "fonction": "Identité / Cœur",
+      "mots_clés": ["identité", "volonté", "créativité", "leadership"],
+      "description": "Représente ton essence, ton moi authentique"
+    },
+    "Lune": {
+      "archétype": "Nourricier",
+      "couleur": "Bleu",
+      "fonction": "Émotions / Intuition",
+      "mots_clés": ["émotions", "intuition", "besoins", "protection"],
+      "description": "Gouverne ton monde intérieur et tes besoins émotionnels"
+    },
+    "Mercure": {
+      "archétype": "Messager",
+      "couleur": "Vert",
+      "fonction": "Communication / Mental",
+      "mots_clés": ["communication", "pensée", "apprentissage", "logique"],
+      "description": "Influence ta façon de penser et de communiquer"
+    },
+    "Vénus": {
+      "archétype": "Amoureux",
+      "couleur": "Rose",
+      "fonction": "Valeurs / Relations",
+      "mots_clés": ["amour", "beauté", "harmonie", "valeurs"],
+      "description": "Régit tes relations et ce que tu trouves beau"
+    },
+    "Mars": {
+      "archétype": "Guerrier",
+      "couleur": "Rouge",
+      "fonction": "Action / Désir",
+      "mots_clés": ["action", "désir", "énergie", "courage"],
+      "description": "Donne l'énergie pour agir et réaliser tes désirs"
+    },
+    "Jupiter": {
+      "archétype": "Sage",
+      "couleur": "Violet",
+      "fonction": "Expansion / Foi",
+      "mots_clés": ["croissance", "abondance", "sagesse", "opportunités"],
+      "description": "Apporte l'expansion et les opportunités"
+    },
+    "Saturne": {
+      "archétype": "Mentor",
+      "couleur": "Gris",
+      "fonction": "Structure / Temps",
+      "mots_clés": ["discipline", "structure", "responsabilité", "maturité"],
+      "description": "Enseigne la discipline et la structure"
+    }
+  },
+  "éléments": {
+    "Feu": {
+      "archétype": "Pionnier",
+      "couleur": "Orange",
+      "qualités": ["enthousiaste", "spontané", "créatif", "inspirant"],
+      "description": "Énergie d'action et d'inspiration"
+    },
+    "Terre": {
+      "archétype": "Bâtisseur", 
+      "couleur": "Marron",
+      "qualités": ["pratique", "stable", "fiable", "persévérant"],
+      "description": "Énergie de construction et de stabilité"
+    },
+    "Air": {
+      "archétype": "Visionnaire",
+      "couleur": "Violet",
+      "qualités": ["intellectuel", "communicatif", "social", "innovant"],
+      "description": "Énergie de communication et d'idées"
+    },
+    "Eau": {
+      "archétype": "Émotionnel",
+      "couleur": "Bleu marine",
+      "qualités": ["intuitif", "empathique", "créatif", "sensible"],
+      "description": "Énergie d'émotion et d'intuition"
+    }
+  },
+  "maisons": {
+    "1": {
+      "thème": "Identité et personnalité",
+      "archétype": "Explorateur"
+    },
+    "5": {
+      "thème": "Créativité et expression",
+      "archétype": "Artiste"
+    },
+    "7": {
+      "thème": "Relations et partenariats",
+      "archétype": "Diplomate"
+    },
+    "10": {
+      "thème": "Mission et vocation",
+      "archétype": "Leader"
+    }
+  }
+}
